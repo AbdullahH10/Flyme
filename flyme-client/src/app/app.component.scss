@@ -1,0 +1,43 @@
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo_box {
+        background-image: url('../assets/images/logo.png');
+        height: 80px;
+        width: 80px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px 20px;
+        align-self: flex-start;
+
+        @media screen and (max-width: 497px) {
+            width: 40px;
+            height: 40px;
+            
+        }
+    }
+
+    .link_box {
+        height: 80px;
+        margin: 10px;
+        align-self: flex-end;
+        justify-content: space-evenly;
+
+        .button_style{
+            background-color: teal;
+            height: 4em;
+            width: 8em;
+            color: white;
+            font-size: 12pt;
+            border-radius: 0.5em;
+            margin: 2px;
+            padding: 5px;
+        }
+    }
+}
