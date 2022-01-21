@@ -1,6 +1,7 @@
 header {
     width: 100vw;
     height: 100px;
+    padding: 10px;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -8,9 +9,9 @@ header {
     justify-content: space-between;
 
     .logo_box {
-        background-image: url('../assets/images/logo.png');
-        height: 80px;
-        width: 80px;
+        background-image: url('../assets/logo.svg');
+        height: 60px;
+        width: 120px;
         background-repeat: no-repeat;
         background-size: cover;
         margin: 10px 20px;
@@ -27,17 +28,14 @@ header {
         height: 80px;
         margin: 10px;
         align-self: flex-end;
+        padding: 20px;
         justify-content: space-evenly;
 
         .button_style{
-            background-color: teal;
-            height: 4em;
-            width: 8em;
-            color: white;
-            font-size: 12pt;
-            border-radius: 0.5em;
-            margin: 2px;
-            padding: 5px;
+            margin: 5px;
+            background-color: #09fecf;
+            border-color: #09fecf;
+            color: #005522;
         }
     }
 }

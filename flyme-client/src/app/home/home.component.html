@@ -8,19 +8,19 @@
             <div class="container">
                 <div class="search_pane">
                     <div class="search_box">
-                        <select [(ngModel)]="selectedOrigin">
+                        <select class="form-select" [(ngModel)]="selectedOrigin">
                             <option value="" disabled selected>from</option>
                             <option *ngFor="let result of uniqueOriginList" value="{{ result.origin }}">{{ result.origin }}</option>
                         </select>
                     </div>
                     <div class="search_box">
-                        <select [(ngModel)]="selectedDestination">
+                        <select class="form-select" [(ngModel)]="selectedDestination">
                             <option value="" disabled selected>to</option>
                             <option *ngFor="let result of uniqueOriginList" value="{{ result.origin }}">{{ result.origin }}</option>
                         </select>
                     </div>
                     <div class="search_box">
-                        <button (click)="readFlight()">Go</button>
+                        <button class="btn btn-success" (click)="readFlight()">Go</button>
                     </div>
                 </div>
                 <div class="flight_pane">
